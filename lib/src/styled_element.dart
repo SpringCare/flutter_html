@@ -283,7 +283,7 @@ StyledElement parseStyledElement(
       //TODO(Sub6Resources): This is a workaround for collapsed margins. Remove.
       if (element.parent.localName == "li") {
         styledElement.style = Style(
-//          margin: EdgeInsets.only(left: 30.0),
+          margin: EdgeInsets.zero,
           display: Display.BLOCK,
           listStyleType: element.localName == "ol"
               ? ListStyleType.DECIMAL
@@ -291,7 +291,7 @@ StyledElement parseStyledElement(
         );
       } else {
         styledElement.style = Style(
-//          margin: EdgeInsets.only(left: 30.0, top: 14.0, bottom: 14.0),
+          margin: EdgeInsets.zero,
           display: Display.BLOCK,
           listStyleType: element.localName == "ol"
               ? ListStyleType.DECIMAL

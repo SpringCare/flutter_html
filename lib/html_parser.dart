@@ -261,7 +261,7 @@ class HtmlParser extends StatelessWidget {
           child: Stack(
             children: <Widget>[
               PositionedDirectional(
-                width: 30, //TODO derive this from list padding.
+                width: 10, //TODO derive this from list padding.
                 start: 0,
                 child: Text('${newContext.style.markerContent}\t',
                     textAlign: TextAlign.right,
